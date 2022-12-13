@@ -1,0 +1,8 @@
+f = open('test.txt', 'r')
+print(f.readline(0))
+i=1
+for x in f:
+    w = x.split(" ")
+    print("-", i, "-", x,"Символів:", len(x),"-", "Кількість слів:", len(w))
+    print()
+    i+=1
